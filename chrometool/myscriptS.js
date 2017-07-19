@@ -1,6 +1,9 @@
+console.log('aaa');
 $(function() {
-            var canvas = document.getElementById('mycanvas');
-            if(!canvas || !canvas.getContext) return false;
+    console.log('aaa');
+            var canvas = document.createElement('body');
+            console.log('aaa');
+            // if(!canvas || !canvas.getContext) return false;
             var ctx = canvas.getContext('2d');
 
             var startX,
@@ -15,8 +18,6 @@ $(function() {
                 isDrawing = true;
                 startX = e.pageX -$(this).offset().left - borderWidth;
                 startY = e.pageY -$(this).offset().top - borderWidth;
-
-
             })
             .mousemove(function(e) {
                 if (!isDrawing) return;
@@ -28,11 +29,9 @@ $(function() {
                 ctx.stroke();
                 startX = x;
                 startY = y;
-
             })
             .mouseup(function() {
                 isDrawing = false;
-
             })
             .mouseleave(function() {
                 isDrawing = false;
