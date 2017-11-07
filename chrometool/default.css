@@ -1,0 +1,6 @@
+#mycanvas {
+            width : 400;
+            height: 200;
+            border: 10px solid #999;
+            cursor: crosshair;
+        }
