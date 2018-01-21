@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2018 年 1 朁E21 日 14:16
+-- Generation Time: 2018 年 1 朁E21 日 21:40
 -- サーバのバージョン： 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -48,7 +48,7 @@ CREATE TABLE `details` (
 
 CREATE TABLE `project` (
   `projectid` int(3) NOT NULL,
-  `projectname` varchar(50) NOT NULL
+  `projectname` varchar(50) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -81,7 +81,7 @@ ALTER TABLE `details`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `projectid` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `projectid` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
