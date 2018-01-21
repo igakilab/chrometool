@@ -1,0 +1,13 @@
+{
+    "name": "issue管理ツール",
+    "version": "1.1",
+    "manifest_version": 2,
+    "description":"chromeextensionからdatabaseに書き込みができるよ",
+    "permissions": ["tabs", "activeTab", "\u003Call_urls>"],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "browser_action":{
+        "default_icon":"icon19.png",
+        "default_title":"issue管理",
+        "default_popup":"popup.html"
+    }
+}

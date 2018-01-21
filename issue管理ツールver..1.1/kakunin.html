@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+ 
+</head>
+<body style="min-width: 300px; min-height: 300px">
+    
+
+
+    
+    <form name="form" action="kakunin.js" method="post">
+
+<select class="parent" name="projectid" id="select">
+<option value="">プロジェクト名を選んで下さい</option>
+</select>
+        
+<select class="children" name="subject" id="subject"　 disabled=disabled>
+<option value="">タイトルを選んで下さい</option>
+</select>
+ 
+
+</form>
+<div id="result"></div>
+    <input type="button" value="issueの完了及び一覧から削除" id="done" class="done" disabled=disabled>
+    
+       <script src="jquery-3.2.1.min.js"></script>
+<!--    <script src="getprojectname.js"></script>-->
+<!--
+    <script src="getimage.js"></script>
+<script src="sousin.js"></script>
+-->
+    <script src="kakunin.js"></script>
+</body>
+</html>

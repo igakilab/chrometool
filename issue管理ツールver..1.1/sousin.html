@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+ 
+</head>
+<body style="min-width: 300px; min-height: 300px">
+    <div id="result"></div>
+
+
+    
+    <form name="form" action="sousin.js" method="post">
+<!--<form name="form" method="post">-->
+<select  name="projectid" id="select">
+<option value="">プロジェクト名を選んで下さい</option>
+</select>
+    
+<input type="text" name="title" placeholder="title"><br>
+      <textarea name="details" rows="10" cols="60" placeholder="detail"></textarea>
+<input type="button" value="送信" id = "submit">
+</form>
+
+    
+       <script src="jquery-3.2.1.min.js"></script>
+    <script src="getprojectname.js"></script>
+    <script src="getimage.js"></script>
+<script src="sousin.js"></script>
+</body>
+</html>
